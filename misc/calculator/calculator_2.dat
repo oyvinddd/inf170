@@ -1,2 +1,8 @@
 set PROD := books calcs;
 
+param: cost sale time :=
+	books	5	20	5
+	calcs	4	18	15;
+	
+param max_cost := 27000;
+param max_time := 43200;
