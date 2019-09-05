@@ -1,0 +1,7 @@
+set MEDIA := tv mag;
+
+param: 		cost 		reach		require :=
+	tv		20000		1800000		10
+	mag		10000		1000000		0;
+	
+param budget := 1000000;
