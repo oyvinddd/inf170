@@ -1,0 +1,9 @@
+set CARS := T	C	L ;
+
+param:	time	profit	orders	effic :=
+	T	1		200		10		50
+	C	2		500		20		30
+	L	3		700		15		20 ;
+	
+param avail := 120;
+param min_avg := 35;

@@ -1,0 +1,7 @@
+set PROD := A B;
+
+param: usage profit p_min p_max :=
+	A	2	40		0.8		110
+	B	4	90		0.0		1000;
+
+param avail := 300;
