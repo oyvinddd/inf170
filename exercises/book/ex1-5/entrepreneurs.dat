@@ -1,0 +1,12 @@
+set ITEMS := tv radio camera cd_player vcr camcorder;
+
+param: 			value	weight	volume	avail	min_stock	max_stock :=
+	tv 			50		35		8		20		3			10
+	radio 		15		5		1		50		3			10
+	camera 		85		4		2		20		3			10
+	vcr 		50		15		5		30		3			10
+	cd_player 	40		3		1		30		3			10
+	camcorder 	120		20		4		15		3			16;
+	
+param max_weight := 75;#500;
+param max_volume := 5;#400;
