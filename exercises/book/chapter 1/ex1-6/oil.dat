@@ -1,0 +1,49 @@
+set INTERM := SRG	N	RF	CG	B	DI	GO	RS;
+set PROD := PG	RG	D	HF;
+set ATTR := vap	oct	den	sul;
+
+param: available :=
+	SRG	21170
+	N	500
+	RF	16140
+	CG	4610
+	B	370
+	DI	250
+	GO	11600
+	RS	25210;
+	
+param units_contr: # TODO: divide these into product categories like shown in text
+			vap		oct		den		sul		den		sul :=
+	SRG		18.4	-78.5	0		0		0		0
+	N		6.54	-65.0	272		0.283	0		0
+	RF		2.57	-104.0	0		0		0		0
+	CG		6.90	-93.7	0		0		0		0
+	B		199.2	-91.8	0		0		0		0
+	DI		0		0		292		0.526	0		0
+	GO		0		0		295		0.353	295		0.353
+	RS		0		0		0		0		343		4.70;
+	
+	
+param attr_limits:
+			vap		oct		den		sul	:=
+	PG		12.2	-90		9999	9999
+	RG		12.7	-86		9999	9999
+	D		9999	9999	306		0.5
+	HF		9999	9999	352		3.5;
+	
+param allowed:
+			PG	RG	D	HF :=	
+	SRG		1	1	0	0
+	N		1	1	1	0
+	RF		1	1	0	0
+	CG		1	1	0	0
+	B		1	1	0	0
+	DI		0	0	1	1
+	GO		0	0	1	1
+	RS		0	0	0	1
+	
+param: revenue :=
+	PG	10.50
+	RG	9.10
+	D	7.70
+	HF	6.65;

@@ -1,0 +1,24 @@
+set FOOD := bread meat potatoes cabbage milk gelatin;
+set NUTR := calories protein calcium vitamin_a;
+
+param amt (tr):
+				bread	meat	potatoes	cabbage		milk	gelatin :=
+	calories	1254	1457	318			46			309		1725
+	protein		39		73		8			4			16		43
+	calcium		418		41		42			141			536		0
+	vitamin_a	0		0		70			860			720		0;
+	
+
+param cost :=
+	bread		0.30
+	meat		1.00
+	potatoes	0.05
+	cabbage		0.08
+	milk		0.23
+	gelatin		0.48;
+	
+param min_n :=
+	calories	3000
+	protein		70
+	calcium		800
+	vitamin_a	500;
