@@ -1,0 +1,13 @@
+a) 
+B2 has a value of 0.4 and reached its lower bound (700). This tells me that the lower
+bound for vitamin B2 should be relaxed in order to make minimize the cost(?).
+
+The opposite is true for vitamin NA. In the current diet, this has reached its upper bound,
+and the negative value for the "reduced cost" here tells me that the upper bound should be
+relaxed (increased) in order to make the model more optimal (i.e. minimizing the cost eeven more?).
+
+
+b)
+To save money I would eat more than 10 packages of MCH. The "reduced cost" of this
+variable has the lowest value of all the ones which has reached the upper bound.
+Relaxing the upper bound on this package would bring the RC value closer to 0.
