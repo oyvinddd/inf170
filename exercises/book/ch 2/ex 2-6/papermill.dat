@@ -1,5 +1,4 @@
 set PATS := 1 2 3 4 5 6;
-#set WIDTHS := 20 45 50 55 75;
 
 param: WIDTHS: orders :=
 	20	48

@@ -1,4 +1,6 @@
-# objective: minimize the number of 110" rolls used
+# Exercise 2-6 - Paper mill
+
+# a)
 
 set PATS;
 set WIDTHS;
