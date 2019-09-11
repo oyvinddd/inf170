@@ -1,0 +1,18 @@
+set ORIG := sea san;
+set DEST := new chi top;
+
+param capacity :=
+	sea	350
+	san	600;
+
+param orders :=
+	new	325
+	chi	300
+	top	275;
+	
+param distance: 
+			new		chi		top :=
+	sea		2500	1700	1800
+	san		2500	1800	1400;
+	
+param cost := 90;
