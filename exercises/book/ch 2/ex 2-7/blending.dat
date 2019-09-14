@@ -1,0 +1,9 @@
+
+param: BLENDS: cost :=
+	SRG	9.57
+	N	8.87
+	RF	11.69
+	CG	10.88
+	B	6.75;
+	
+param orders := 42000;

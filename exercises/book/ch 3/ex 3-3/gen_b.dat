@@ -1,7 +1,8 @@
-param: ORIG:  supply :=  # defines set "ORIG" and param "supply"
-	GARY  	1400
-	CLEV 	2600
-	PITT 	2900;
+set ORIG_2 := GARY CLEV PITT;
+	
+param: ORIG_1: supply :=
+MIDTWN	2700
+HAMLTN	4200;
 
 param: DEST:  demand :=
 	FRA 900
@@ -12,7 +13,12 @@ param: DEST:  demand :=
 	FRE 1100
 	LAF 1000;
 
-param cost:
+param cost_1:
+			GARY	CLEV	PITT :=
+MIDTWN 		12 		8 		17
+HAMLTN 		10 		5 		13;
+
+param cost_2:
 		FRA  	DET  	LAN  	WIN  	STL  	FRE  	LAF :=
 GARY 	39 		14 		11 		14 		16 		82 		8 
 CLEV 	27 		9 		12 		9 		26 		95 		17 

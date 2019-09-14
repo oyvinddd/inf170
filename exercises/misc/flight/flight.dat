@@ -1,0 +1,14 @@
+
+set COMP := 1	2	3;
+set CARG := 1	2	3	4;
+
+param: weight_cap	space_cap :=
+	1	10		6800
+	2	16		8700
+	3	8		5300;
+
+param:	weight	volume	profit :=
+	1	18		480		310
+	2	15		650		380
+	3	23		580		350
+	4	12		390		285;

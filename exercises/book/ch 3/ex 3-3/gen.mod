@@ -22,8 +22,6 @@ subject to Supply {i in ORIG}:
    
 subject to Demand {j in DEST}:
 	sum {i in ORIG} Trans[i,j] = demand[j];
-	
-# a)
 
 # No more than 50% of the supply for one mill may be sent to one factory
 subject to Supply_Cap {i in ORIG,j in DEST}:
@@ -37,3 +35,5 @@ subject to Demand_Cap {i in ORIG,j in DEST}:
 # Before FRA got their whole supply from PITT but now it has to
 # get some from CLEV as well. By using the 'display Trans' command
 # we see the same trend for almost all other factory/mill combo.
+
+# For b) see gen_b.mod and gen_b.dat

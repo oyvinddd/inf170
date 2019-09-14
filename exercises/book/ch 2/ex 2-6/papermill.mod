@@ -15,14 +15,14 @@ var Use {PATS} >= 0;
 
 minimize Number_Of_Rolls: sum {j in PATS} Use[j];
 
-#subject to Orders {i in WIDTHS}:
-#	sum {j in PATS} nbr[i,j] * Use[j] >= orders[i]; # a)
+subject to Orders {i in WIDTHS}:
+	sum {j in PATS} nbr[i,j] * Use[j] >= orders[i]; # a)
 
-subject to Pattern_Lower {i in WIDTHS}:
-	sum {j in PATS} Use[j] * nbr[i,j] >= orders[i] * 0.9; # b)
+#subject to Pattern_Lower {i in WIDTHS}:
+#	sum {j in PATS} Use[j] * nbr[i,j] >= orders[i] * 0.9; # b)
 	
-subject to Pattern_Upper {i in WIDTHS}:
-	sum {j in PATS} Use[j] * nbr[i,j] <= orders[i] * 1.4; # b)
+#subject to Pattern_Upper {i in WIDTHS}:
+#	sum {j in PATS} Use[j] * nbr[i,j] <= orders[i] * 1.4; # b)
 	
 	
 # c) TODO:
