@@ -1,0 +1,50 @@
+
+set ORIG := Coullard Daskin Hazen Hopp Iravani Linetsky Mehrotra Nelson Smilowitz Tamhane White ;
+set DEST := D239 M233 C118 C138 C140 C246 M239 D241 C251 C250 D237;
+
+param supply default 1;
+#param demand default 1; # a)
+
+# c)
+param demand :=
+	D239 1
+	M233 1
+	C118 0 # unavailable
+	C138 2 # allows two people
+	C140 2 # allows two people
+	C246 2 # allows two people
+	M239 1
+	D241 1
+	C251 0 # unavailable
+	C250 0 # unavailable
+	D237 1;
+	
+
+param cost:
+			C118 	C138 	C140	C246 	C250 	C251 	D237	D239 	D241	M233	M239 :=
+Coullard 	6 		29 		28 		27 		11 		10 		4 		5 		3 		2 		1
+Daskin 		11 		28 		27 		26 		9 		10		1		5 		4 		2 		3
+Hazen 		9 		30	 	31 		21 		5 		6		2		7 		8 		3 		4
+Hopp 		11 		29 		28 		30 		6 		5 		1		7 		4 		2 		3
+Iravani 	3 		22 		28 		29 		10		11 		1		5 		4 		6 		7
+Linetsky 	11 		29 		30 		25 		3 		4 		6		7 		8		1 		2
+Mehrotra 	6 		31 		30 		29		8		7		1		2		5		4		3
+Nelson 		11		25 		24 		26 		7 		8 		1		9 		10		2 		3
+Smilowitz 	11 		29 		30	 	28 		6 		5 		7	 	3 		4 		1 		2
+Tamhane 	5 		26 		29 		28 		4 		3 		7		10		11 		2 		1
+White 		11	 	29 		28 		24 		6 		5 		3		10	 	7 		2 		1;
+
+# b)
+#param cost:
+#			C118 	C138 	C140	C246 	C250 	C251 	D237	D239 	D241	M233	M239 :=
+#Coullard 	99 		99 		99 		99 		99 		99 		4		99		3		2		1
+#Daskin 	99 		99 		99 		99 		99 		99		1		99		4		2		3
+#Hazen 		99 		99	 	99 		1 		99 		99		2		99 		99		3		4
+#Hopp 		99 		99 		99 		99 		99 		99 		1		99 		4		2		3
+#Iravani 	3 		2 		99 		99 		99		99 		1		99 		4		99		99
+#Linetsky 	99 		99 		99 		99 		3 		4 		99		99 		99		1		2
+#Mehrotra 	99 		99 		99 		99		99		99		1		2		99		4		3
+#Nelson 	99		99 		4 		99 		99 		99 		1		99 		99		2		3
+#Smilowitz 	99 		99		99	 	99		99 		5 		99	 	3 		4		1		2
+#Tamhane 	99 		99		99 		99 		4 		3 		99		99		99		2		1
+#White 		99	 	99 		99 		4 		99 		5 		3		99	 	99		2		1;
