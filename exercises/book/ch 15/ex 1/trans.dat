@@ -1,0 +1,17 @@
+set CITIES := A	B C D E F ;
+set LINKS := (A,B) (A,C) (B,C) (B,D) (B,E) (C,E) (D,F) (D,E) (E,F);
+
+param supply  default 0 := A 100, B 50 ;
+param demand  default 0 := E 30, F 120 ;
+
+param: 			cost  capacity  :=
+
+	A B			13   	80
+	A C	 		12   	80
+  	B C			1    	80
+  	B D			6    	80
+  	B E			9    	80
+  	C E			7	    80
+  	D F			13  	80
+  	D E			4  	  	80
+  	E F			12	   	80 ;
