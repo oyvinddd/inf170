@@ -1,0 +1,19 @@
+
+param: PROD: 	demand	profit	penalty :=
+	park		800		30		15
+	goos		750		40		20
+	pant		600		20		10
+	glov		500		10		8;
+	
+param: DEPT: capacity :=
+	cut		1000
+	ins		1000
+	sew		1000
+	pac		1000;
+	
+param time:
+		park	goos	pant	glov :=
+cut		0.30	0.30	0.25	0.15
+ins		0.25	0.35	0.30	0.10
+sew		0.45	0.50	0.40	0.22
+pac		0.15	0.15	0.10	0.05;
