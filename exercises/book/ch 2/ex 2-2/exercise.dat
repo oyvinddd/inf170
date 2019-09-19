@@ -1,7 +1,6 @@
 set EXERC := walking jogging swimming machine indoor pushback;
 set R := walking jogging machine;
 
-
 param: 			calories 	tolerance	min_req :=
 	walking		100			5.0			1.0
 	jogging		200			2.0			1.0

@@ -1,4 +1,4 @@
-# 1-4
+# Exercise 1-4 - A car manufacturer
 
 # a)
 # data values:

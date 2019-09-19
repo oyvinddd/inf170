@@ -1,12 +1,6 @@
-# Exercise 1.1 b) - Advertising campaign
+# Exercise 1-1 - Advertising campaign
 
-# budget: 1000000 (constraint)
-# at least 10minutes of tv time (constraint)
-# variables:
-# - 20000 * tv advert (1 minute) reach: 1800000
-# - 10000 * mag advert (1 page) reach 	1000000
-
-
+# b)
 
 # Variables
 var At;

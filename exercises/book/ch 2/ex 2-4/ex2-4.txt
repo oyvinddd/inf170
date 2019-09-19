@@ -6,7 +6,6 @@ The opposite is true for vitamin NA. In the current diet, this has reached its u
 and the negative value for the "reduced cost" here tells me that the upper bound should be
 relaxed (increased) in order to make the model more optimal (i.e. minimizing the cost eeven more?).
 
-
 b)
 To save money I would eat more than 10 packages of MCH. The "reduced cost" of this
 variable has the lowest value of all the ones which has reached the upper bound.

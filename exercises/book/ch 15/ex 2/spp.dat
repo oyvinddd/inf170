@@ -1,0 +1,15 @@
+set NODES := A B C D E F ;
+
+param ent := A;
+param ext := F;
+
+param: EDGES: 	length :=
+		A B		13
+		A C	 	12
+  		B C		1
+  		B D		6
+  		B E		9
+  		C E		7
+  		D F		13
+  		D E		4
+  		E F		12;

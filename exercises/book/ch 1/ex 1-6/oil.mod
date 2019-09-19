@@ -6,7 +6,6 @@ set I; # set of intermediates
 set J; # set of final products
 set K; # set of attributes
 
-
 param a {I} >= 0; # barrels of intermediates i available
 param r {I,K} >= 0; # units of attr k contributed in each barrel of intermediate i
 param u {J,K} >= 0; # max allowed units of attr k per barrel of intermediate i
