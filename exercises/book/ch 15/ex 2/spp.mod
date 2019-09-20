@@ -1,5 +1,7 @@
 # Exercise 15-2
 
+# a) - Shortest path
+
 set NODES; # set of nodes
 
 param ent symbolic in NODES;
@@ -19,8 +21,6 @@ subject to Start:
 
 subject to Balance {k in NODES diff {ent,ext}}:
 	sum {(i,k) in EDGES} Use[i,k] = sum {(k,j) in EDGES} Use[k,j];
-	
-# a)
 
 # Shortest path from A to F is 31
 
