@@ -1,0 +1,7 @@
+
+param: TEL: 	cost 	charge :=
+	MaBell		0.25	16
+	PaBell		0.21	25
+	PabyBell	0.22	18;
+
+param minutes := 200;

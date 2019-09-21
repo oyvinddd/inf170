@@ -1,0 +1,15 @@
+
+param: FACT: cap fixed :=
+	eth 425 1500
+	tan	400 2000
+	nig	750 3000;
+
+param: PROD: demand :=
+	ginko	550
+	cola	450;
+
+param cost (tr):
+			ginko	cola :=
+	eth		21.00	22.50
+	tan		22.50	24.50
+	nig		23.00	25.50;
