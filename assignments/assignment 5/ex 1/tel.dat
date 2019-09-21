@@ -1,7 +1,11 @@
+# Assignment 5-1 - Three Telephone Companies
 
 param: TEL: 	cost 	charge :=
 	MaBell		0.25	16
 	PaBell		0.21	25
-	PabyBell	0.22	18;
+	BabyBell	0.22	18;
 
 param minutes := 200;
+param M := 1000;
+
+# Objective: phone bill cost 62$ (only using BabyBell)

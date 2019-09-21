@@ -1,10 +1,10 @@
 
-
 set TEL;
 
 param cost {TEL} >= 0;
 param charge {TEL} >= 0;
 param minutes >= 0;
+param M >= 0;
 
 var X {TEL} >= 0;
 var Y {TEL} binary; # binary variable (if company should be used or not) 
@@ -14,5 +14,4 @@ minimize Monthly_Cost:
 
 subject to Minutes: sum {t in TEL} X[t] = minutes;
 
-subject to Usage {t in TEL}: Y[t] <= X[t];
-#subject to Usage {t in TEL}: X[t] -Y[t] * charge[t] <= 0;
+subject to Usage {t in TEL}: X[t] <= Y[t] * M; # If-Then condition
