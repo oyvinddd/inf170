@@ -1,0 +1,11 @@
+# V: Set of ships
+# Kv: Kapacity of ship v in V
+
+# N^P: Set of loading nodes
+# N^D: Set of unloading nodes
+
+# Nv: Set of nodes that can be visited by ship v
+# Av: Set of arcs that can be traversed by ship v
+
+# Cijv: Cost of sailing from i to j for ship v
+# 
