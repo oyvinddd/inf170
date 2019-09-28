@@ -7,5 +7,31 @@
 # Nv: Set of nodes that can be visited by ship v
 # Av: Set of arcs that can be traversed by ship v
 
+# each node has a time window: [Ti,Ti]
+
 # Cijv: Cost of sailing from i to j for ship v
-# 
+# Tivj: Associated travel time to i from j of ship v
+
+# tiv: time at which service begins at node i using ship v
+# liv: load on board after completing service at node i using ship v
+
+# xijv: binary flow variables, indicating whether ship v moves directly from node i to node j
+# yi: binary variables indicating whether cargo i is transported by the available vessel fleet
+
+# CiS: Cost if cargo is not transported with the available vessel fleet 
+
+# vessel with parameters
+param: V:	home_port	starting_time	K :=
+	1		8			125				13200
+	2		13			106				13200
+	3		31			0				16500;
+
+# cargo with parameters
+param: I:	origin		dest	size	cost	l_win	u_win	l_del	u_del :=
+	1		17			37		4601	790000	345		417		345		1006
+	2		33			36		13444	430790	96		168		96		529
+	3		17			27		6596	200354	715		787		715		1089
+	4		6			1		11052	275455	0		72		0		435
+	5		38			33		6643	642740	107		179		107		593
+	6		10			38		14139	587198	300		372		300		801
+	7		26			6		5310	359885	178		250		178		567;
