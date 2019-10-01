@@ -1,17 +1,21 @@
+# Assignment 5-1 - Three Telephone Companies
 
 set TEL;
 
 param cost {TEL} >= 0;
 param charge {TEL} >= 0;
-param minutes >= 0;
-param M >= 0;
 
 var X {TEL} >= 0;
-var Y {TEL} binary; # binary variable (if company should be used or not) 
+var Y {TEL} binary;
 
-minimize Monthly_Cost:
-	sum {t in TEL} X[t] * cost[t] + sum {t in TEL} Y[t] * charge[t];
+param avg_mins >= 0;
 
-subject to Minutes: sum {t in TEL} X[t] = minutes;
+minimize Total_Cost: 
+sum {i in TEL} (X[i] * cost[i] + Y[i] * charge[i]);
 
-subject to Usage {t in TEL}: X[t] <= Y[t] * M; # If-Then condition
+subject to Usage: 
+sum {i in TEL} X[i] = avg_mins;
+
+subject to Charge {i in TEL}: X[i] <= Y[i] * avg_mins;
+
+# Objective: phone bill cost 62$ (only using BabyBell)
