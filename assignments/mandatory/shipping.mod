@@ -1,6 +1,7 @@
 
 set V;
 set I;
+set A;
 
 param home_port {V};
 param starting_time {V};
@@ -16,7 +17,9 @@ param l_del {I};
 param u_del {I};
 
 
+var X {V};
 
-#minimize Z: sum 
+
+minimize Z: sum {v in V,(i,j) in A} 
 
 

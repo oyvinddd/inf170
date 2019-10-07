@@ -18,7 +18,9 @@
 # xijv: binary flow variables, indicating whether ship v moves directly from node i to node j
 # yi: binary variables indicating whether cargo i is transported by the available vessel fleet
 
-# CiS: Cost if cargo is not transported with the available vessel fleet 
+# CiS: Cost if cargo is not transported with the available vessel fleet
+
+set A := 
 
 # vessel with parameters
 param: V:	home_port	starting_time	K :=

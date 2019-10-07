@@ -1,0 +1,13 @@
+
+param: MED: audience 	cost	writers 	artists		others :=
+TV			300			600		120			120			20		
+Magazine	200			250		50			80			20
+Radio		100			100		20			0			20
+Newspaper	150			120		40			60			20
+Mail		100			200		30			40			20
+Phone		50			250		5			0			200;
+
+param budget := 1000;
+param writer_hrs := 200;
+param artist_hrs := 300;
+param other_hrs := 200;
