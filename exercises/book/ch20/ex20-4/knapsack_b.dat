@@ -1,0 +1,16 @@
+set KNSACKS := K_1 K_2;
+
+param: OBJECTS: weight value :=
+a	50	1000
+b	50	800
+c	40	750
+d	35	700
+e	30	600
+f	30	550
+g	15	250
+h	15	200
+i	10	200
+j	5	150;
+
+param w_limit := 50;
+param knapsacks := 2;
