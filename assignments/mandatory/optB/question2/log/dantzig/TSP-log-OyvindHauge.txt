@@ -1,0 +1,79 @@
+ampl: include TSP-run-OyvindHauge.run;
+Gurobi 8.1.0: logfile=TSP-log-OyvindHauge.txt
+timelim=3600
+outlev=1
+Optimize a model with 10712 rows, 1082118 columns and 3246354 nonzeros
+Variable types: 0 continuous, 1082118 integer (1082118 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 3e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve time: 3.78s
+Presolved: 10712 rows, 1082118 columns, 3246354 nonzeros
+Variable types: 0 continuous, 1082118 integer (1082118 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    6.9889610e+04   7.090000e+02   7.459276e+12      7s
+   23564    5.8502764e+04   1.777095e+02   1.033044e+12     11s
+   35477    5.8041834e+04   1.514428e+02   1.690191e+12     16s
+   47407    5.5691263e+04   1.253841e+02   1.343507e+12     21s
+   56889    5.8774273e+04   1.131919e+02   1.271833e+12     25s
+Concurrent spin time: 0.00s
+
+Solved with dual simplex
+
+Root relaxation: objective 4.872951e+03, 12103 iterations, 23.05 seconds
+Total elapsed time = 30.18s
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 4872.95099    0 8197          - 4872.95099      -     -   31s
+     0     0 4872.95099    0 8271          - 4872.95099      -     -   64s
+     0     0 4872.95099    0 8303          - 4872.95099      -     -   82s
+     0     0 4872.95099    0 8217          - 4872.95099      -     -  113s
+     0     0 4872.95099    0 8277          - 4872.95099      -     -  119s
+     0     0 4872.95099    0 8208          - 4872.95099      -     -  151s
+     0     0 4872.95099    0 8307          - 4872.95099      -     -  160s
+     0     0 4872.95099    0 8201          - 4872.95099      -     -  168s
+     0     0 4872.95099    0 8200          - 4872.95099      -     -  182s
+     0     2 4872.95099    0 8200          - 4872.95099      -     -  239s
+     1     4 4872.95099    1 8604          - 4872.95099      -  4254  462s
+H    2     4                    9282.1773439 4872.95099  47.5%  2127  462s
+     3     8 4873.07465    2 8719 9282.17734 4872.95099  47.5%  5043  723s
+     7    14 5013.90817    3 8977 9282.17734 4903.41743  47.2%  4947 1098s
+    13    20 5205.83968    4 9154 9282.17734 5013.90817  46.0%  4970 1184s
+    19    24 5299.06221    5 9152 9282.17734 5013.90817  46.0%  3733 1696s
+    25    29 5378.61494    6 8975 9282.17734 5013.90817  46.0%  4562 2311s
+H   31    34                    9238.7492274 5013.90817  45.7%  5010 2671s
+H   32    35                    9238.7490946 5013.90817  45.7%  4886 2671s
+H   33    35                    9226.6801330 5013.90817  45.7%  4749 2671s
+H   36    38                    9221.5063865 5013.90817  45.6%  4405 2671s
+    37    37 5440.10515    8 9080 9221.50639 5013.90817  45.6%  4310 3411s
+    47    45 5558.92823   10 8883 9221.50639 5013.90817  45.6%  4559 3542s
+    59    58 5586.33998   12 8889 9221.50639 5013.90817  45.6%  3810 3600s
+
+Cutting planes:
+  Zero half: 48
+
+Explored 70 nodes (291804 simplex iterations) in 3600.52 seconds
+Thread count was 12 (of 12 available processors)
+
+Solution count 5: 9221.51 9226.68 9238.75 ... 9282.18
+
+Time limit reached
+Best objective 9.221506386537e+03, best bound 5.013908174977e+03, gap 45.6281%
+Gurobi 8.1.0: time limit with a feasible solution; objective 9221.506387
+291804 simplex iterations
+70 branch-and-cut nodes
+No basis.
+No dual variables returned.
+ampl: display Tourlength;
+Tourlength = 9221.51

@@ -23,7 +23,7 @@
 set A := 
 
 # vessel with parameters
-param: V:	home_port	starting_time	K :=
+param V:	home_port	starting_time	K :=
 	1		8			125				13200
 	2		13			106				13200
 	3		31			0				16500;

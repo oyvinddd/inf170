@@ -1,0 +1,15 @@
+reset;
+option solver gurobi;
+option gurobi_options 'logfile=TSP-log-OyvindHauge.txt timelim=3600 outlev=1';
+#model TSP-model-OyvindHauge_MTZ.mod;
+model TSP-model-OyvindHauge_Svetska.mod;
+#model TSP-model-OyvindHauge_Dantzig.mod;
+data TSP-data-OyvindHauge.dat;
+solve;
+
+# we only care about the '1' values
+option omit_zero_cols 1;
+option omit_zero_rows 1;
+option display_1col 500;
+
+display x;

@@ -1,0 +1,14 @@
+
+a)
+
+Optimal loading plan:
+	- Vessel #1 -> Port #1 (200000 barrels)
+	- Vessel #1 -> Port #4 (60000 barrels)
+	- Vessel #2 -> Port #3 (260000 barrels)
+	- Vessel #4 -> Port #2 (120000 barrels)
+	- Vessel #4 -> Port #5 (110000 barrels)
+
+Optimal cost: 3495000$
+
+
+b)

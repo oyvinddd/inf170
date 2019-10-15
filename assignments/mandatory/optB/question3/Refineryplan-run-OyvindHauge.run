@@ -1,0 +1,5 @@
+reset;
+option solver cplex;
+model Refineryplan-model-OyvindHauge.mod;
+data Refineryplan-data-OyvindHauge.dat;
+solve;
