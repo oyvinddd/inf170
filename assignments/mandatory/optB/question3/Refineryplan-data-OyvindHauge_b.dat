@@ -6,14 +6,26 @@ set V := v1 v2 v3 v4;
 # daily demand at the refinery
 param D := 750000;
 
-# a) loading cost per barrel for each vessel
-param C:
-	v1	v2	v3	v4 :=
-p1	5	7	6	5
-p2	4	3	4	2
-p3	5	4	5	4
-p4	7	9	7	6
-p5	3	2	3	1;
+param: T1 :=
+p1	6
+p2	5
+p3	6
+p4	7
+p5	3;
+
+param: T2 :=
+p1	5
+p2	4
+p3	4
+p4	5
+p5	3;
+
+param: T3 :=
+p1	4
+p2	3
+p3	2
+p4	5
+p5	1;
 
 # available product and fixed cost for ports
 param: 	Sp			Cp :=
