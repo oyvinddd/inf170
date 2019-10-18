@@ -3,4 +3,12 @@ reset;
 option solver cplex; # use ILP solver
 model Sudoku-OyvindHauge.mod;
 data Sudoku-OyvindHauge.dat;
+
 solve;
+
+# we only care about the '1' values
+option omit_zero_cols 1;
+option omit_zero_rows 1;
+option display_1col 500;
+
+display X;

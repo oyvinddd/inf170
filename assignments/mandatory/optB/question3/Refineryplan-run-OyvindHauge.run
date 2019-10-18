@@ -1,5 +1,8 @@
 reset;
 option solver cplex;
-model Refineryplan-model-OyvindHauge.mod;
-data Refineryplan-data-OyvindHauge.dat;
+model Refineryplan-model-OyvindHauge_b.mod;
+data Refineryplan-data-OyvindHauge_b.dat;
 solve;
+
+#display X, Y, Z;
+display X1, X2, X3, Qa, Qb, Qc;

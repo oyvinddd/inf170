@@ -6,7 +6,7 @@
         {
             "label": "build and run",
             "type": "shell",
-            "command": "python3 plotter.py",
+            "command": "python3 ./sudoku/formatter.py",
             "group": {
                 "kind": "build",
                 "isDefault": true
