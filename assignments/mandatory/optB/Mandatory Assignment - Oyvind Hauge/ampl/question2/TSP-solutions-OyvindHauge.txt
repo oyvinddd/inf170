@@ -1,0 +1,19 @@
+These are my solutions after running all three models.
+
+MTZ
+- No. of variables: 10609
+- No. of constraints: 10712
+- Objective value: 8077.16
+- Running time: 3600 seconds
+
+Gain (Svetska)
+- No. of variables: 21012
+- No. of constraints: 10917
+- Objective value: 8038.69
+- Running time: 647 seconds
+
+Steps (Dantzig)
+- No. of variables: 1082120
+- No. of constraints: 10712
+- Objective value: 9221.51
+- Running time: 3600 seconds

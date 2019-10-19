@@ -1,0 +1,44 @@
+
+# sets of ports and vessels
+set P := p1 p2 p3 p4 p5;
+set V := v1 v2 v3 v4;
+
+# daily demand at the refinery
+param D := 750000;
+
+param: T1 :=
+p1	6
+p2	5
+p3	6
+p4	7
+p5	3;
+
+param: T2 :=
+p1	5
+p2	4
+p3	4
+p4	5
+p5	3;
+
+param: T3 :=
+p1	4
+p2	3
+p3	2
+p4	5
+p5	1;
+
+# available product and fixed cost for ports
+param: 	Sp			Cp :=
+p1		200000		20000
+p2		120000		20000
+p3		260000		30000
+p4		180000		30000
+p5		110000		30000;
+
+# fixed cost and capacity for vessels
+param:	Uv			Cv :=
+v1		390000		120000
+v2		330000		115000
+v3		250000		125000
+v4		270000		100000;
+

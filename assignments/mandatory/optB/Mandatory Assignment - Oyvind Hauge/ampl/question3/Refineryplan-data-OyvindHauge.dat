@@ -1,0 +1,32 @@
+
+# sets of ports and vessels
+set P := p1 p2 p3 p4 p5;
+set V := v1 v2 v3 v4;
+
+# daily demand at the refinery
+param D := 750000;
+
+# a) loading cost per barrel for each vessel
+param C:
+	v1	v2	v3	v4 :=
+p1	5	7	6	5
+p2	4	3	4	2
+p3	5	4	5	4
+p4	7	9	7	6
+p5	3	2	3	1;
+
+# available product and fixed cost for ports
+param: 	Sp			Cp :=
+p1		200000		20000
+p2		120000		20000
+p3		260000		30000
+p4		180000		30000
+p5		110000		30000;
+
+# fixed cost and capacity for vessels
+param:	Uv			Cv :=
+v1		390000		120000
+v2		330000		115000
+v3		250000		125000
+v4		270000		100000;
+
