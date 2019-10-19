@@ -1,0 +1,8 @@
+
+set PROD := diesel gasoline lubricants jetfuel;
+
+param: 		iraq_mix	dubai_mix 	demand :=
+diesel		0.20		0.10		14000
+gasoline	0.25		0.60		30000
+lubricants	0.10		0.15		10000
+jetfuel		0.15		0.10		8000;

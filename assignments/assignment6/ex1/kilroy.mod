@@ -1,5 +1,9 @@
 # Assignment 6-1
 
+set CITIES;
+
+param time {CITIES,CITIES} >= 0;
+
 # Fire stations:
 var X1 binary;
 var X2 binary;
